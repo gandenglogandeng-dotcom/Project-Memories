@@ -43,7 +43,7 @@ export const MOCK_MEMORIES: Memory[] = [
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
     fullUrl:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=90",
-    category: "On Duty",
+    category: "Meja Makan",
     date: "2026-07-05",
     location: "Posko Utama",
     people: ["Sinta", "Adik-adik Dusun A"],
@@ -57,7 +57,7 @@ export const MOCK_MEMORIES: Memory[] = [
     thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
     fullUrl: "",
     youtubeId: "dQw4w9WgXcQ",
-    category: "Dump",
+    category: "Holiday",
     date: "2026-07-08",
     location: "Balai Dusun B",
     people: ["Tim KKN", "Ibu PKK"],
@@ -72,7 +72,7 @@ export const MOCK_MEMORIES: Memory[] = [
       "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80",
     fullUrl:
       "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600&q=90",
-    category: "Meja Makan",
+    category: "Masterpiece",
     date: "2026-07-11",
     location: "Ladang Dusun A",
     people: ["Pak Wito"],
@@ -87,7 +87,7 @@ export const MOCK_MEMORIES: Memory[] = [
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
     fullUrl:
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=90",
-    category: "Holiday",
+    category: "Dump",
     date: "2026-07-14",
     location: "Bukit Dusun B",
     people: ["Tim KKN"],
@@ -103,7 +103,7 @@ export const MOCK_MEMORIES: Memory[] = [
       "https://images.unsplash.com/photo-1591824438708-ff173f0d1e42?w=800&q=80",
     fullUrl:
       "https://images.unsplash.com/photo-1591824438708-ff173f0d1e42?w=1600&q=90",
-    category: "Masterpiece",
+    category: "Posko",
     date: "2026-07-18",
     location: "Dusun B",
     people: ["Karang Taruna"],
