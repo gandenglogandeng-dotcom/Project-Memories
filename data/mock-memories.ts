@@ -2,11 +2,11 @@ import { Memory, GuestMessage, VaultStats } from "@/lib/types";
 
 export const CATEGORIES: Memory["category"][] = [
   "Posko",
-  "Mengajar",
-  "Sosialisasi",
-  "Dusun A",
-  "Dusun B",
-  "Keseruan",
+  "On Duty",
+  "Dump",
+  "Meja Makan",
+  "Holiday",
+  "Masterpiece",
 ];
 
 export const VAULT_STATS: VaultStats = {
