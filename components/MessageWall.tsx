@@ -67,7 +67,7 @@ export default function MessageWall({ initialMessages }: MessageWallProps) {
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Bu Sri, Pak Dukuh, dst."
+                placeholder="Your name..."
                 className="h-11 w-full rounded-card border border-paper/20 bg-paper/[0.08] px-4 text-sm text-paper placeholder:text-paper/40 outline-none transition-colors focus:border-gold"
                 required
               />
