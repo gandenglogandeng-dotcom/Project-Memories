@@ -1,10 +1,10 @@
 export type MemoryCategory =
   | "Posko"
-  | "Mengajar"
-  | "Sosialisasi"
-  | "Dusun A"
-  | "Dusun B"
-  | "Keseruan";
+  | "On Duty"
+  | "Dump"
+  | "Meja Makan"
+  | "Holiday"
+  | "Masterpiece";
 
 export type MediaType = "image" | "video";
 
