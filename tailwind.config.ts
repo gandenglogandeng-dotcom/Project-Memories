@@ -1,19 +1,5 @@
 import type { Config } from "tailwindcss";
 
-/**
- * DESIGN TOKENS — "Jejak Langkah Logandeng"
- * Konsep: buku catatan lapangan (field journal) pengabdian desa —
- * kertas hangat, tinta hijau teh/padi, dan warna senja karst Gunungkidul.
- *
- * Warna dasar:
- *  - ink       #23291E  teks utama, hampir hitam tapi hangat (bukan hitam pekat)
- *  - paper     #F4EBDA  latar kertas tua, condong ke emas — bukan cream generik
- *  - pine      #2E4433  hijau padi/teak tua — warna primer
- *  - pine-soft #4C6B52  hijau sekunder untuk aksen & hover
- *  - clay      #BC6B3A  sienna bakar — warna "senja karst", aksen utama
- *  - gold      #DE9F4E  emas senja — aksen kedua, dipakai tipis-tipis
- *  - stone     #DCD0B4  krem batu kapur — border, divider, kartu netral
- */
 const config: Config = {
   darkMode: "class",
   content: [
@@ -34,19 +20,19 @@ const config: Config = {
           deep: "#E4D5B0",
         },
         pine: {
-          DEFAULT: "#2E4433",
-          soft: "#4C6B52",
-          dim: "#7C927F",
-          50: "#EEF2ED",
+          DEFAULT: "#6E1420",
+          soft: "#8C2A38",
+          dim: "#B98A90",
+          50: "#F3E7E8",
         },
         clay: {
-          DEFAULT: "#BC6B3A",
-          soft: "#D89364",
-          deep: "#914E27",
+          DEFAULT: "#C98A2B",
+          soft: "#E0B667",
+          deep: "#9C6A1D",
         },
         gold: {
-          DEFAULT: "#DE9F4E",
-          soft: "#EFC488",
+          DEFAULT: "#D4A017",
+          soft: "#E8C766",
         },
         stone: {
           DEFAULT: "#DCD0B4",
