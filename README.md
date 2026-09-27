@@ -48,12 +48,12 @@ npm run dev
 ## 3. Setup Cloudinary (penyimpanan foto & video, gratis ±25GB/bulan)
 
 1. Buat akun di [cloudinary.com](https://cloudinary.com).
-2. Ambil **Cloud Name** dari dashboard → isi `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`.
+2. Ambil **Cloud Name** dari dashboard → isi `fkw1dpxa`.
 3. Masuk ke **Settings → Upload → Upload presets → Add upload preset**:
    - Signing Mode: **Unsigned** (supaya bisa diupload langsung dari browser
      tanpa expose API secret).
    - Folder: `logandeng-memories` (opsional, biar rapi).
-   - Copy nama preset ke `NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET`.
+   - Copy nama preset ke `mngt3j9y`.
 4. Untuk kebutuhan "tanpa batas": Cloudinary free tier cukup besar untuk ribuan
    foto terkompresi. Jika kuota habis, upgrade ke plan berbayar atau pertimbangkan
    **Cloudflare R2** (S3-compatible, storage sangat murah + egress gratis) sebagai
@@ -86,7 +86,7 @@ npm run dev
 
 ## 6. Halaman Admin
 
-- `/admin` dilindungi kode akses sederhana (`ADMIN_ACCESS_CODE` di `.env.local`,
+- `/admin` dilindungi kode akses sederhana (`08082026` di `.env.local`,
   dicek di server lewat `/api/admin/verify`). Ini **bukan** autentikasi
   sungguhan — untuk penggunaan jangka panjang oleh banyak anggota tim,
   ganti dengan **Supabase Auth** (email/password atau magic link) dan

@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: theme("backgroundImage.paper-grain");
+  }
+
+  ::selection {
+    background-color: rgba(188, 107, 58, 0.18);
+  }
+
+  /* Scrollbar hangat, tipis */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: theme("colors.stone.dark");
+    border-radius: 999px;
+    border: 2px solid theme("colors.paper.DEFAULT");
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.clay.DEFAULT");
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply h-11 w-full rounded-card border border-ink/15 bg-paper px-4 text-sm text-ink outline-none transition-colors placeholder:text-ink-soft/40 focus:border-clay;
+  }
+}
+
+@layer utilities {
+  /* Garis putus-putus "jejak langkah" dipakai di Hero & Timeline */
+  .path-dotted {
+    background-image: radial-gradient(theme("colors.pine.dim") 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
