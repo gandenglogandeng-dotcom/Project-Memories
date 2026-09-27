@@ -42,9 +42,8 @@ export default function Hero({ stats, spotlight }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-ink-soft"
           >
-            Setiap tawa di posko, setiap pelajaran di kelas sore, dan setiap
-            senja di atas bukit karst — tersimpan di sini, supaya tak ada
-            satu momen pun yang hilang ditelan waktu.
+            Setiap tawa di posko, setiap perbincangan di meja makan, dan setiap
+            lagu yang kita nyanyikan — tersimpan di sini.
           </motion.p>
 
           {/* Garis jejak titik-titik menuju statistik, sesuai nama brand */}
