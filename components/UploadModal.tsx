@@ -109,11 +109,14 @@ export default function UploadModal({ open, onClose, onUploaded }: UploadModalPr
           );
         });
 
-        uploadedRecords.push({
+          uploadedRecords.push({
           title: files.length > 1 ? `${title} (${i + 1})` : title,
           description,
           media_type: result.resource_type,
-          thumbnail_url: result.secure_url,
+          thumbnail_url:
+            result.resource_type === "video"
+              ? getCloudinaryVideoThumbnail(result.secure_url)
+              : result.secure_url,
           full_url: result.secure_url,
           category,
           date,
