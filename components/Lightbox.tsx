@@ -95,13 +95,21 @@ export default function Lightbox({ memory, onClose, onNext, onPrev }: LightboxPr
           >
             {/* Media */}
             <div className="relative flex max-h-[50vh] min-h-[240px] flex-1 items-center justify-center bg-ink/95 md:max-h-[90vh]">
-              {memory.mediaType === "video" && memory.youtubeId ? (
+                            {memory.mediaType === "video" && memory.youtubeId ? (
                 <iframe
                   className="aspect-video w-full"
                   src={`https://www.youtube.com/embed/${memory.youtubeId}`}
                   title={memory.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                />
+              ) : memory.mediaType === "video" ? (
+                <video
+                  className="max-h-[50vh] w-full md:max-h-[90vh]"
+                  src={memory.fullUrl}
+                  controls
+                  playsInline
+                  poster={memory.thumbnailUrl}
                 />
               ) : (
                 <div className="relative h-full w-full">
