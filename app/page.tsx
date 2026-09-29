@@ -42,13 +42,11 @@ export default async function HomePage() {
     createdAt: row.created_at,
   }));
 
-  const stats = memories.length
-    ? {
-        totalMoments: memories.length,
-        totalDays: new Set(memories.map((m) => m.date)).size,
-        totalStories: messages.length,
-      }
-    : VAULT_STATS; // fallback ke angka contoh selama database masih kosong
+    const stats = {
+    totalMoments: memories.length || VAULT_STATS.totalMoments,
+    totalDays: 43, // fix permanen, tidak dihitung otomatis dari data
+    totalStories: messages.length,
+  };
 
   const spotlight = memories.filter((m) => m.featured).length
     ? memories.filter((m) => m.featured)
