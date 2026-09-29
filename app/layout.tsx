@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
+import BackgroundMusic from "@/components/BackgroundMusic";
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
