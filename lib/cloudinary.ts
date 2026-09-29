@@ -72,3 +72,14 @@ export function extractYouTubeId(url: string): string | null {
   }
   return null;
 }
+
+/**
+ * Untuk video yang diupload langsung sebagai file (bukan link YouTube),
+ * Cloudinary bisa membuat thumbnail JPG otomatis dari frame videonya —
+ * caranya cukup ganti ekstensi file video (.mp4/.mov/dst) di URL menjadi
+ * .jpg. Ini WAJIB dipakai untuk thumbnail, karena <Image> di Next.js tidak
+ * bisa menampilkan file video sebagai gambar.
+ */
+export function getCloudinaryVideoThumbnail(videoSecureUrl: string): string {
+  return videoSecureUrl.replace(/\.(mp4|mov|webm|avi|mkv)$/i, ".jpg");
+}
