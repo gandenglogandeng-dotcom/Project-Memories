@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { CATEGORIES } from "@/data/mock-memories";
 import { MemoryCategory } from "@/lib/types";
-import { uploadToCloudinary, extractYouTubeId } from "@/lib/cloudinary";
+import { uploadToCloudinary, extractYouTubeId, getCloudinaryVideoThumbnail } from "@/lib/cloudinary";
 import { Button } from "./ui/Button";
 import { cn } from "@/lib/utils";
 
