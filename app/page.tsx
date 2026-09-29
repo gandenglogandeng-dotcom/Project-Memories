@@ -42,7 +42,7 @@ export default async function HomePage() {
     createdAt: row.created_at,
   }));
 
-    const stats = {
+  const stats = {
     totalMoments: memories.length || VAULT_STATS.totalMoments,
     totalDays: 43, // fix permanen, tidak dihitung otomatis dari data
     totalStories: messages.length,
@@ -60,4 +60,3 @@ export default async function HomePage() {
     </>
   );
 }
-
