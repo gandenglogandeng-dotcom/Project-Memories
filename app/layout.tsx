@@ -27,8 +27,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="id" className={`${fraunces.variable} ${manrope.variable}`}>
       <body className="min-h-screen bg-paper font-body text-ink antialiased selection:bg-clay/20 selection:text-ink">
-        <Navbar />
+                <Navbar />
         <main className="pb-24 md:pb-0">{children}</main>
+        <BackgroundMusic />
       </body>
     </html>
   );
