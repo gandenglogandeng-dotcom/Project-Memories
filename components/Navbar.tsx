@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { Home, Images, MessagesSquare, UploadCloud, Footprints } from "lucide-react";
+import { Home, Images, MessagesSquare, UploadCloud } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -36,9 +36,9 @@ export default function Navbar() {
       >
         <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-8">
           <Link href="/" className="flex items-center gap-2.5">
-            <Footprints className="h-6 w-6 text-clay" strokeWidth={2.2} />
+            <img src="/logo.png" alt="Logo" className="h-8 w-8 rounded-full object-cover" />
             <span className="font-display text-lg font-semibold tracking-tight text-ink">
-              Project Memories, Gandeng Logandeng
+              Project Memories Gandeng Logandeng
             </span>
           </Link>
 
