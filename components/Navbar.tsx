@@ -38,7 +38,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2.5">
             <Footprints className="h-6 w-6 text-clay" strokeWidth={2.2} />
             <span className="font-display text-lg font-semibold tracking-tight text-ink">
-              Jejak Langkah Logandeng
+              Project Memories, Gandeng Logandeng
             </span>
           </Link>
 
