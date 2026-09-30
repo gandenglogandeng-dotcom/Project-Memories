@@ -74,12 +74,9 @@ export default function Gallery({ memories, categories }: GalleryProps) {
 
   return (
     <section id="galeri" className="mx-auto max-w-6xl px-6 py-16 md:px-8 md:py-24">
-      <div className="mb-10 flex flex-col gap-3">
+            <div className="mb-10 flex flex-col gap-3">
         <p className="text-sm font-semibold text-clay">Core Memories</p>
-        <h2 className="font-display text-display-md text-ink">Galeri Kenangan</h2>
-        <p className="max-w-xl text-ink-soft">
-          Telusuri setiap momen berdasarkan kegiatan atau minggu pengabdian.
-        </p>
+        <h2 className="font-display text-display-md text-ink">Every picture has a story.</h2>
       </div>
 
       <div className="mb-8">
