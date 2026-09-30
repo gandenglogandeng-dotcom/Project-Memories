@@ -31,8 +31,7 @@ export default function Hero({ stats, spotlight }: HeroProps) {
             className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-ink-soft"
           >
             Setiap tawa di posko, setiap perbincangan di meja makan, dan setiap
-            lagu yang kita nyanyikan — tersimpan di sini, supaya tak ada
-            satu momen pun yang hilang ditelan waktu.
+            lagu yang kita nyanyikan, tersimpan disini.
           </motion.p>
 
           <div className="path-dotted mt-10 h-px w-24" />
