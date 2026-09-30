@@ -40,11 +40,10 @@ export default function Hero({ stats, spotlight }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-6 grid grid-cols-3 gap-6 sm:gap-10"
+                        className="mt-6 grid grid-cols-2 gap-6 sm:gap-10"
           >
             <StatsCounter value={stats.totalMoments} label="Momen Tercatat" />
             <StatsCounter value={stats.totalDays} label="Hari Pengabdian" />
-            <StatsCounter value={stats.totalStories} label="Cerita Warga" />
           </motion.div>
         </div>
 
